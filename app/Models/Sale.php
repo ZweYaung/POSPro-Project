@@ -15,4 +15,9 @@ class Sale extends Model
         'total_amount',
         'sale_date',
     ];
+
+    public function customer()
+{
+    return $this->belongsTo(Customer::class);
+}
 }
